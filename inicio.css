@@ -1,0 +1,227 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.logo {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 500px;
+  width: 360px;
+  height: 200px;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+header {
+  position: relative; /* 
+   background-color: red; */
+  margin-left: 240px;
+  margin-bottom: 20px;
+  width: 900px;
+  height: 10vh;
+}
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex; /* 
+    background-color: yellow; */
+}
+ul {
+  /* 
+    background-color: green; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  list-style: none;
+}
+li {
+  /* 
+    background-color: grey; */
+  width: 70%;
+  height: 100%;
+  padding: 0 10px;
+  align-items: center;
+  text-align: center;
+}
+a {
+  /* 
+    background-color: rgb(0, 130, 33); */
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: rgb(0, 183, 255);
+  font-size: 18px;
+  border-right: 2px solid rgb(255, 0, 0);
+  border-left: 2px solid rgb(255, 0, 0);
+}
+a:hover {
+  background-color: rgb(194, 185, 185);
+  transition: 1s;
+  transform: scale(0.9);
+}
+.galeria {/* 
+  padding-bottom: 1em; */
+/*   padding-top: 1em; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 160px;
+  grid-template-areas:
+    "img-1 img-2 img-3"
+    "img-4 img-5 img-6";
+  gap: 0.8em;
+}
+figure{
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit:initial;
+  }
+.galeria-1::before {
+  content: "INSTALACION DE PROGRAMAS SEGUROS";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 183, 255, 0.527);
+  transform: translate(100%);
+  transition: transform .8s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.galeria-1:hover::before {
+  transform: translate(0) rotate(360deg);
+}
+.galeria-2::before {
+    content: "MANTENIMIENTO A PC";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 183, 255, 0.527);
+    transform: translate(100%);
+    transition: transform .8s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .galeria-2:hover::before {
+    transform: translate(0) rotate(360deg);
+  }
+  .galeria-3::before {
+    content: "ANTIVIRUS";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 183, 255, 0.527);
+    transform: translate(100%);
+    transition: transform .8s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .galeria-3:hover::before {
+    transform: translate(0) rotate(360deg);
+  }
+  .galeria-4::before {
+    content: "DESARROLLADOR WEB";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 183, 255, 0.527);
+    transform: translate(100%);
+    transition: transform .8s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .galeria-4:hover::before {
+    transform: translate(0) rotate(360deg);
+  }
+  .galeria-5::before {
+    content: "INSTALACION DE WINDOWS 10HOME-10PRO";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 183, 255, 0.527);
+    transform: translate(100%);
+    transition: transform .8s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .galeria-5:hover::before {
+    transform: translate(0) rotate(360deg);
+  }
+  .galeria-6::before {
+    content: "PAQUETE OFIMÀTICO";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 183, 255, 0.527);
+    transform: translate(100%);
+    transition: transform .8s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .galeria-6:hover::before {
+    transform: translate(0) rotate(360deg);
+  }
+
+.galeria-1 {
+  grid-area: img-1;
+}
+.galeria-2 {
+  grid-area: img-2;
+}
+.galeria-3 {
+  grid-area: img-3;
+}
+.galeria-4 {
+  grid-area: img-4;
+}
+.galeria-5 {
+  grid-area: img-5;
+}
+.galeria-6 {
+    grid-area: img-6;
+  }
+/* {} # */
